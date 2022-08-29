@@ -60,18 +60,15 @@ body {
 
 /* ==================== HEADER NAV ==================== */
 
-
 .header__nav {
     height: 40px;
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
-    color: #b2b2b2;
     font: 14px "Oswald", sans-serif;
 }
 
 .header__nav_active {
     background-color: #29c5e6;
-    color: white;
 }
 
 .header__nav ul {
@@ -80,7 +77,12 @@ body {
     justify-content: space-evenly;
 }
 
-.header__nav ul li {
+.header__nav a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+
+.header__nav li {
     width: 12.5%;
     height: 100%;
     display: flex;
@@ -88,6 +90,9 @@ body {
     align-items: center;
 }
 
+.header__nav_active a {
+    color: white;
+}
 
 /* ==================== HEADING ==================== */
 
@@ -108,3 +113,48 @@ body {
     padding: 0 10px;
     background-image: url(/images/bg.png);
 }
+
+
+/* ==================== MAIN ==================== */
+
+.main-flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-aside {
+    width: 250px;
+    height: 235px;
+    background-color: #f3f3f3;
+    border: 1px solid #e7e7e7;
+}
+
+.main-aside-ul {
+    height: 235px;
+}
+
+.main-aside-ul li {
+    color: #8f8f8f;
+    border-bottom: 1px solid #e7e7e7;
+    height: 39px;
+/*     display: flex;
+    align-items: center; */
+    list-style: square;
+    list-style-position: inside;
+}
+
+.main .main-aside-ul__li_active {
+    color: #29c5e6;
+}
+
+.main-aside-ul a {
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+    font: 300 14px/38px "Oswald", sans-serif;
+    vertical-align: middle;
+}
+
+
+/* ==================== MAIN CONTENT ==================== */
