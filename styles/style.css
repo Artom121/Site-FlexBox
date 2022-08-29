@@ -1,13 +1,14 @@
 body {
     border-top: 5px solid #7e7e7e;
-    background-image: url(/images/bg.png);
+    background-image: url(/images/bg.png);    
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+
     max-width: 960px;
     margin: auto;
 }
@@ -117,6 +118,11 @@ body {
 
 /* ==================== MAIN ==================== */
 
+.main-content {
+    margin-left: 30px;
+    max-width: 680px;
+}
+
 .main-flex-container {
     display: flex;
     justify-content: space-between;
@@ -124,7 +130,8 @@ body {
 }
 
 .main-aside {
-    width: 250px;
+    max-width: 250px;
+    min-width: 180px;
     height: 235px;
     background-color: #f3f3f3;
     border: 1px solid #e7e7e7;
@@ -138,10 +145,9 @@ body {
     color: #8f8f8f;
     border-bottom: 1px solid #e7e7e7;
     height: 39px;
-/*     display: flex;
-    align-items: center; */
     list-style: square;
     list-style-position: inside;
+    margin-left: 12px;
 }
 
 .main .main-aside-ul__li_active {
@@ -161,7 +167,7 @@ body {
 
 .aside-figure-heading {
     margin-top: 30px;
-    width: 250px;
+    max-width: 250px;
     height: 38px;
     background-color: #29c5e6;
     display: flex;
@@ -177,4 +183,134 @@ body {
 .aside-figure img {
     border: 11px solid #f3f3f3;
     box-sizing: content-box;   
+}
+
+
+/* ==================== ARTICLE  ==================== */
+
+.article p{
+    font: 12px "Tahoma", sans-serif;
+    color: #8f8f8f;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+
+.article-heading {
+    height: 170px;
+    min-width: 100%;
+    background-color: #29c5e6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.article-heading blockquote {
+    color: white;
+    font: italic 300 33px/34px "Oswald", sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 19px;
+}
+
+.article-heading cite {
+    font: 300 20px "Oswald", sans-serif;
+    color: #1d8ea6;
+    align-self: flex-end;
+    margin-right: 36px;
+}
+
+.article-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-footer img {
+    border: 1px solid ;
+    color: #c9c9c9;
+}
+
+.main-section__heading {
+    width: 100%;
+    height: 44px;
+    background-color: #29c5e6;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.main-section h2{
+    font: 300 30px "Oswald", sans-serif;
+    color: white;
+    margin-left: 9px;
+}
+
+
+.main-section {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+/* ==================== MAIN TEAM  ==================== */
+
+.main-team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+}
+
+.main-team__figure {
+    font: 300 16px "Oswald", sans-serif;
+    color: #8f8f8f;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-team__figure span{
+    font-size: 14px;
+    color: #29c5e6;
+    display: block;
+}
+
+
+/* ==================== FOOTER ==================== */
+
+.footer {
+    max-height: 112px;
+    background-color: #7e7e7e;
+    margin-top: 50px;
+}
+
+.footer-contain {
+    margin: 0 auto;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-info {
+    max-width: 620px;
+    display: flex;
+}
+
+.foot-info h3 {
+    font: 14px 'Oswald', sans-serif;
+    color: white;
+    border-bottom: 1px solid #919191;
+}
+
+.twitter p{
+    font: 11px "Tahoma", sans-serif;
+    color: #dbdbdb;
+}
+
+.twitter time{
+    font: 11px "Tahoma", sans-serif;
+    color: #b4aeae;
+    border-bottom: 1px solid #b4aeae;
 }
