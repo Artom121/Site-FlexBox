@@ -158,3 +158,23 @@ body {
 
 
 /* ==================== MAIN CONTENT ==================== */
+
+.aside-figure-heading {
+    margin-top: 30px;
+    width: 250px;
+    height: 38px;
+    background-color: #29c5e6;
+    display: flex;
+    align-items: center;
+}
+
+.aside-figure__heading {
+    font: 14px "Oswald", sans-serif;
+    color: white;
+    margin-left: 10px;
+}
+
+.aside-figure img {
+    border: 11px solid #f3f3f3;
+    box-sizing: content-box;   
+}
